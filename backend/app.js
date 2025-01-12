@@ -24,6 +24,6 @@ if (process.env.NODE_ENV == 'production') {
     });
 }
 
-app.listen(process.'https://msd-kart.onrender.com/', () => {
+app.listen(process.env.PORT, () => {
     console.log(`Server listening to Port ${process.env.PORT} in ${process.env.NODE_ENV}`)
 });
